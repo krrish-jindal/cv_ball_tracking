@@ -36,3 +36,4 @@ rosrun turtlesim turtlesim_node
 ```bash
 rosrun turtle turtle_curve.py 
 ```
+<img src = "https://github.com/atom-robotics-lab/line_follower/blob/main/Assets/line_follower.gif" >
