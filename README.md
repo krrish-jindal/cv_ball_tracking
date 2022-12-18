@@ -37,3 +37,4 @@ rosrun turtlesim turtlesim_node
 rosrun turtle turtle_curve.py 
 ```
 <img src = "https://github.com/krrish-jindal/opencv_curve_tracer/blob/origin/Assets/curve_tracer.gif" >
+![](https://github.com/krrish-jindal/opencv_curve_tracer/blob/main/Assets/curve_tracer.gif)
