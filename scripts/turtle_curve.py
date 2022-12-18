@@ -75,7 +75,6 @@ def main():
 
 
 			cv2.waitKey(5)
-			# print("=====",map_range(500,0,500,11.088,0))
 
 
 			cv2.circle(img,(j[0],j[1]),20,(0,255,0),-10)
@@ -88,16 +87,11 @@ def main():
 			pose.pose.position.x=x
 			pose.pose.position.y=y
 
-			print(x,"@@@@@@@",y)
-			cv2.putText(img, "radians = " + str(mn[b]), (50, 50), cv2.FONT_HERSHEY_SIMPLEX,0.5, (0, 0, 0), 2)
 			cv2.imshow("a",img)
 			b=b+1
 
-			# print("------------",mn)
-			dis_error=np.sqrt((x-my_X)**2+(y-my_Y)**2)
 			dis_x= math.cos(my_theta)*(x-my_X) + math.sin(my_theta)*(y-my_Y)
 			dis_y= -math.sin(my_theta)*(x-my_X) + math.cos(my_theta)*(y-my_Y)
-			dis_theta=math.atan(y/x)-my_theta
 			
 			desire_theta=math.atan2(dis_y,dis_x)
 
@@ -113,10 +107,8 @@ def main():
 			if cv2.waitKey(1) == 27:
 
 				break
-			# cv2.destroyAllWindows()
 
 
-		# if cv2.waitKey(1) == 27:
-			# break
+	
 	cv2.destroyAllWindows()
 main()
